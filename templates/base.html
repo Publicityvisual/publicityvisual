@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ config.APP_NAME }}{% if page_title %} | {{ page_title }}{% endif %}{% endblock %}</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="{% block meta_description %}{{ config.META_DESCRIPTION }}{% endblock %}">
+    <meta name="keywords" content="{{ config.META_KEYWORDS }}">
+    <meta name="author" content="{{ config.APP_NAME }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request.url }}">
+    <meta property="og:title" content="{{ self.title() }}">
+    <meta property="og:description" content="{{ self.meta_description() }}">
+    <meta property="og:image" content="{% block meta_image %}{{ request.url_for('static', path='images/logo.png') }}{% endblock %}">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ request.url }}">
+    <meta property="twitter:title" content="{{ self.title() }}">
+    <meta property="twitter:description" content="{{ self.meta_description() }}">
+    <meta property="twitter:image" content="{{ self.meta_image() }}">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{ url_for('static', path='favicon.ico') }}" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', path='css/style.css') }}">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Scripts de cabecera -->
+    {% block head_scripts %}{% endblock %}
+    
+    <!-- Google Analytics -->
+    {% if config.ENABLE_ANALYTICS %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.GA_MEASUREMENT_ID }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ config.GA_MEASUREMENT_ID }}');
+    </script>
+    {% endif %}
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+    <!-- Barra de navegación superior -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-3">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="{{ url_for('home') }}" class="flex items-center">
+                        <img src="{{ url_for('static', path='images/logo.png') }}" alt="{{ config.APP_NAME }}" class="h-10 mr-2">
+                        <span class="text-xl font-bold text-blue-700">{{ config.APP_NAME }}</span>
+                    </a>
+                </div>
+                
+                <!-- Menú de navegación principal -->
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="{{ url_for('home') }}" class="text-gray-700 hover:text-blue-600 font-medium">Inicio</a>
+                    <a href="{{ url_for('category_news', category='mexico') }}" class="text-gray-700 hover:text-blue-600 font-medium">México</a>
+                    <a href="{{ url_for('category_news', category='mundo') }}" class="text-gray-700 hover:text-blue-600 font-medium">Mundo</a>
+                    <a href="{{ url_for('category_news', category='tecnologia') }}" class="text-gray-700 hover:text-blue-600 font-medium">Tecnología</a>
+                    <a href="{{ url_for('category_news', category='entretenimiento') }}" class="text-gray-700 hover:text-blue-600 font-medium">Entretenimiento</a>
+                    <a href="{{ url_for('advertising') }}" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 font-medium">Publicidad</a>
+                </nav>
+                
+                <!-- Botón de menú móvil -->
+                <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Menú móvil -->
+            <div id="mobile-menu" class="md:hidden hidden pb-4">
+                <a href="{{ url_for('home') }}" class="block py-2 text-gray-700 hover:bg-gray-100 px-2 rounded">Inicio</a>
+                <a href="{{ url_for('category_news', category='mexico') }}" class="block py-2 text-gray-700 hover:bg-gray-100 px-2 rounded">México</a>
+                <a href="{{ url_for('category_news', category='mundo') }}" class="block py-2 text-gray-700 hover:bg-gray-100 px-2 rounded">Mundo</a>
+                <a href="{{ url_for('category_news', category='tecnologia') }}" class="block py-2 text-gray-700 hover:bg-gray-100 px-2 rounded">Tecnología</a>
+                <a href="{{ url_for('category_news', category='entretenimiento') }}" class="block py-2 text-gray-700 hover:bg-gray-100 px-2 rounded">Entretenimiento</a>
+                <a href="{{ url_for('advertising') }}" class="block py-2 text-blue-600 font-medium hover:bg-gray-100 px-2 rounded">Publicidad</a>
+            </div>
+            
+            <!-- Barra de búsqueda -->
+            <div class="mt-4 pb-4 border-b border-gray-200">
+                <form action="{{ url_for('search_news') }}" method="get" class="flex">
+                    <input type="text" name="q" placeholder="Buscar noticias..." class="flex-1 border border-gray-300 rounded-l-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <button type="submit" class="bg-blue-600 text-white px-4 rounded-r-md hover:bg-blue-700 focus:outline-none">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container mx-auto px-4 py-8">
+        {% block content %}{% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Columna 1: Logo y descripción -->
+                <div class="col-span-1">
+                    <img src="{{ url_for('static', path='images/logo-white.png') }}" alt="{{ config.APP_NAME }}" class="h-12 mb-4">
+                    <p class="text-gray-400 text-sm mb-4">
+                        {{ config.APP_DESCRIPTION }}
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="{{ config.SOCIAL_MEDIA.facebook }}" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="{{ config.SOCIAL_MEDIA.twitter }}" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="{{ config.SOCIAL_MEDIA.instagram }}" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="{{ config.SOCIAL_MEDIA.youtube }}" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Columna 2: Enlaces rápidos -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="{{ url_for('home') }}" class="text-gray-400 hover:text-white">Inicio</a></li>
+                        <li><a href="{{ url_for('about_us') }}" class="text-gray-400 hover:text-white">Sobre Nosotros</a></li>
+                        <li><a href="{{ url_for('contact') }}" class="text-gray-400 hover:text-white">Contacto</a></li>
+                        <li><a href="{{ url_for('advertising') }}" class="text-gray-400 hover:text-white">Publicidad</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Términos de Uso</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3: Categorías -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Categorías</h3>
+                    <ul class="space-y-2">
+                        <li><a href="{{ url_for('category_news', category='mexico') }}" class="text-gray-400 hover:text-white">México</a></li>
+                        <li><a href="{{ url_for('category_news', category='mundo') }}" class="text-gray-400 hover:text-white">Mundo</a></li>
+                        <li><a href="{{ url_for('category_news', category='tecnologia') }}" class="text-gray-400 hover:text-white">Tecnología</a></li>
+                        <li><a href="{{ url_for('category_news', category='entretenimiento') }}" class="text-gray-400 hover:text-white">Entretenimiento</a></li>
+                        <li><a href="{{ url_for('category_news', category='deportes') }}" class="text-gray-400 hover:text-white">Deportes</a></li>
+                        <li><a href="{{ url_for('category_news', category='cultura') }}" class="text-gray-400 hover:text-white">Cultura</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 4: Contacto -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contacto</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>{{ config.COMPANY_INFO.address }}</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:{{ config.COMPANY_INFO.email }}" class="hover:text-white">{{ config.COMPANY_INFO.email }}</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <a href="tel:{{ config.COMPANY_INFO.phone|replace(' ', '') }}" class="hover:text-white">{{ config.COMPANY_INFO.phone }}</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>{{ config.COMPANY_INFO.working_hours }}</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Derechos de autor -->
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500 text-sm">
+                <p>&copy; {{ now.year }} {{ config.APP_NAME }}. Todos los derechos reservados.</p>
+                <p class="mt-2">Diseñado y desarrollado por <a href="https://publicityvisual.com" class="text-blue-400 hover:underline">Publicity Visual</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de ir arriba -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center text-2xl hover:bg-blue-700 transition-all duration-300 hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="{{ url_for('static', path='js/main.js') }}"></script>
+    
+    <!-- Scripts personalizados por página -->
+    {% block scripts %}{% endblock %}
+    
+    <!-- Script de menú móvil -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+        
+        // Botón de ir arriba
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+# Procesamiento de imágenes/vídeos
+Pillow==10.0.0
+opencv-python-headless==4.8.0.76
+moviepy==1.0.3
+imageio-ffmpeg==0.4.8
+
+# APIs de noticias
+newspaper3k==0.2.8
+google-news==1.6.9
+newsapi-python==0.2.7
+
+# Procesamiento de texto
+gensim==4.3.1
+sumy==0.10.0
+
+# Web Scraping
+requests-html==0.10.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# Cache y rendimiento
+redis==4.5.5
+python-memcached==1.59

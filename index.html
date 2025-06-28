@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Publicity Visual | Noticias que Importan y se Comparten. Medio de Prensa Digital Independiente con base en Querétaro.">
+    <title>Publicity Visual | Noticias que Importan</title>
+    <meta name="author" content="Publicity Visual">
+    <meta name="publisher" content="Publicity Visual">
+    <meta name="copyright" content="© 2025 Publicity Visual. Todos los derechos reservados.">
+    <link rel="canonical" href="https://publicityvisual.com/">
+    
+    <!-- Preload de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://publicityvisual.com/">
+    <meta property="og:title" content="Publicity Visual | Noticias que Importan">
+    <meta property="og:description" content="Medio de Prensa Digital Independiente con base en Querétaro. Informamos con raíz, sin partidos, sin censura.">
+    <meta property="og:image" content="https://publicityvisual.com/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://publicityvisual.com/">
+    <meta property="twitter:title" content="Publicity Visual | Noticias que Importan">
+    <meta property="twitter:description" content="Medio de Prensa Digital Independiente con base en Querétaro. Informamos con raíz, sin partidos, sin censura.">
+    <meta property="twitter:image" content="https://publicityvisual.com/images/og-image.jpg">
+</head>
+<body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="date">
+                    <i class="far fa-calendar-alt"></i> 
+                    <span id="current-date"></span>
+                </div>
+                <div class="social-links">
+                    <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Publicity Visual" width="200">
+                    </a>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <form action="#" method="get">
+                            <input type="text" placeholder="Buscar..." name="s">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                    <button class="menu-toggle" aria-label="Menú">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Navegación principal -->
+            <nav class="main-nav">
+                <ul>
+                    <li class="current-menu-item"><a href="index.html">Inicio</a></li>
+                    <li><a href="noticias.html">Noticias</a></li>
+                    <li><a href="politica.html">Política</a></li>
+                    <li><a href="economia.html">Economía</a></li>
+                    <li><a href="tecnologia.html">Tecnología</a></li>
+                    <li><a href="entretenimiento.html">Entretenimiento</a></li>
+                    <li><a href="deportes.html">Deportes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <!-- Portada con noticias destacadas -->
+        <section class="featured-news">
+            <div class="container">
+                <div class="featured-grid">
+                    <!-- Noticia principal -->
+                    <article class="main-featured">
+                        <div class="featured-image">
+                            <img src="https://via.placeholder.com/800x500" alt="Noticia destacada">
+                            <span class="category">Principal</span>
+                        </div>
+                        <div class="featured-content">
+                            <h2><a href="noticia.html">Título de la noticia principal destacada con un texto más largo para probar</a></h2>
+                            <p class="excerpt">Breve descripción o extracto de la noticia principal que se muestra en la portada con más texto para probar el diseño.</p>
+                            <div class="meta">
+                                <span class="author"><i class="far fa-user"></i> Por Nombre del Autor</span>
+                                <span class="date"><i class="far fa-clock"></i> Hace 2 horas</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Noticias secundarias -->
+                    <div class="secondary-featured">
+                        <article class="secondary-news">
+                            <div class="news-image">
+                                <img src="https://via.placeholder.com/400x250" alt="Noticia 2">
+                                <span class="category">Política</span>
+                            </div>
+                            <div class="news-content">
+                                <h3><a href="noticia.html">Título de la segunda noticia destacada</a></h3>
+                                <div class="meta">
+                                    <span class="date"><i class="far fa-clock"></i> Hace 4 horas</span>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="secondary-news">
+                            <div class="news-image">
+                                <img src="https://via.placeholder.com/400x250" alt="Noticia 3">
+                                <span class="category">Economía</span>
+                            </div>
+                            <div class="news-content">
+                                <h3><a href="noticia.html">Título de la tercera noticia destacada</a></h3>
+                                <div class="meta">
+                                    <span class="date"><i class="far fa-clock"></i> Hace 5 horas</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de últimas noticias -->
+        <section class="latest-news">
+            <div class="container">
+                <h2 class="section-title">Últimas Noticias</h2>
+                <div class="news-grid">
+                    <!-- Artículo de noticia -->
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x250" alt="Noticia 1">
+                            <span class="category">Tecnología</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="noticia.html">Título de la noticia de tecnología con un texto más largo para probar el diseño</a></h3>
+                            <p class="excerpt">Breve descripción o extracto de la noticia que se muestra en la tarjeta con más texto para probar el diseño.</p>
+                            <div class="meta">
+                                <span class="author"><i class="far fa-user"></i> Autor</span>
+                                <span class="date"><i class="far fa-clock"></i> Hace 2 horas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Repetir más artículos -->
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x250" alt="Noticia 2">
+                            <span class="category">Deportes</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="noticia.html">Título de la noticia de deportes</a></h3>
+                            <p class="excerpt">Breve descripción o extracto de la noticia que se muestra en la tarjeta.</p>
+                            <div class="meta">
+                                <span class="author"><i class="far fa-user"></i> Autor</span>
+                                <span class="date"><i class="far fa-clock"></i> Hace 3 horas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x250" alt="Noticia 3">
+                            <span class="category">Entretenimiento</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="noticia.html">Título de la noticia de entretenimiento</a></h3>
+                            <p class="excerpt">Breve descripción o extracto de la noticia que se muestra en la tarjeta.</p>
+                            <div class="meta">
+                                <span class="author"><i class="far fa-user"></i> Autor</span>
+                                <span class="date"><i class="far fa-clock"></i> Hace 4 horas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="card-image">
+                            <img src="https://via.placeholder.com/400x250" alt="Noticia 4">
+                            <span class="category">Salud</span>
+                        </div>
+                        <div class="card-content">
+                            <h3><a href="noticia.html">Título de la noticia de salud</a></h3>
+                            <p class="excerpt">Breve descripción o extracto de la noticia que se muestra en la tarjeta.</p>
+                            <div class="meta">
+                                <span class="author"><i class="far fa-user"></i> Autor</span>
+                                <span class="date"><i class="far fa-clock"></i> Hace 5 horas</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                <!-- Botón de ver más -->
+                <div class="load-more">
+                    <a href="noticias.html" class="btn">Ver más noticias</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de categorías destacadas -->
+        <section class="featured-categories">
+            <div class="container">
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3><a href="politica.html">Política</a></h3>
+                        <p>Las últimas noticias sobre política nacional e internacional.</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3><a href="economia.html">Economía</a></h3>
+                        <p>Información actualizada sobre economía y finanzas.</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3><a href="tecnologia.html">Tecnología</a></h3>
+                        <p>Las últimas tendencias y noticias tecnológicas.</p>
+                    </div>
+                    
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <h3><a href="deportes.html">Deportes</a></h3>
+                        <p>Lo último en deportes nacionales e internacionales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección de boletín -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h3>Suscríbete a nuestro boletín</h3>
+                        <p>Recibe las últimas noticias directamente en tu correo electrónico.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit" class="btn">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-widgets">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <img src="images/logo-white.png" alt="Publicity Visual" width="180">
+                        </div>
+                        <p>Publicity Visual es un medio de comunicación digital independiente con sede en Querétaro, México. Nuestro compromiso es ofrecer información veraz, objetiva y de calidad, manteniendo siempre nuestra independencia editorial y periodística.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-widget">
+                        <h4>Enlaces rápidos</h4>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="noticias.html">Noticias</a></li>
+                            <li><a href="categorias.html">Categorías</a></li>
+                            <li><a href="acerca-de.html">Acerca de</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-widget">
+                        <h4>Categorías</h4>
+                        <ul>
+                            <li><a href="politica.html">Política</a></li>
+                            <li><a href="economia.html">Economía</a></li>
+                            <li><a href="tecnologia.html">Tecnología</a></li>
+                            <li><a href="entretenimiento.html">Entretenimiento</a></li>
+                            <li><a href="deportes.html">Deportes</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-widget">
+                        <h4>Contacto</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i> Querétaro, México</li>
+                            <li><i class="fas fa-phone"></i> +52 442 123 4567</li>
+                            <li><i class="fas fa-envelope"></i> contacto@publicityvisual.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Publicity Visual. Todos los derechos reservados.<br>Diseñado y desarrollado por <a href="https://publicityvisual.com" target="_blank" style="color: #fff; text-decoration: underline;">Publicity Visual</a></p>
+                    <ul class="footer-links">
+                        <li><a href="terminos.html">Términos y condiciones</a></li>
+                        <li><a href="privacidad.html">Política de privacidad</a></li>
+                        <li><a href="cookies.html">Política de cookies</a></li>
+                        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+                        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de ir arriba -->
+    <button id="back-to-top" aria-label="Ir arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

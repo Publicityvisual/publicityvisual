@@ -1,0 +1,89 @@
+# Entornos virtuales
+venv/
+env/
+ENV/
+.env
+.venv
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Archivos de caché
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# Archivos de desarrollo
+.DS_Store
+Thumbs.db
+
+# Archivos de base de datos
+*.db
+*.sqlite3
+
+# Archivos multimedia
+media/
+!media/.gitkeep
+
+# Archivos de registro
+*.log
+logs/
+
+# Archivos de entorno de desarrollo
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Archivos específicos del proyecto
+/cache/
+!/cache/.gitkeep
+
+# Archivos de modelo grandes (si los hay)
+models/
+!models/.gitkeep
+
+# Archivos temporales
+*.tmp
+*~
+
+# Archivos de Jupyter Notebook
+.ipynb_checkpoints
+
+# Archivos de cobertura
+.coverage
+htmlcov/
+
+# Archivos de documentación generados
+site/
+_build/
+
+# Archivos de sistema operativo
+.DS_Store
+Thumbs.db

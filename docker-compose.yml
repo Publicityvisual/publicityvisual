@@ -1,0 +1,62 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: publicity-visual-web
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "8080:8000"
+    volumes:
+      - ./media:/app/media
+      - ./cache:/app/cache
+      - ./logs:/app/logs
+    depends_on:
+      - redis
+    networks:
+      - publicity-network
+    command: >
+      sh -c "uvicorn main:app --host 0.0.0.0 --port 8000 --reload"
+
+  redis:
+    image: redis:7-alpine
+    container_name: publicity-visual-redis
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    networks:
+      - publicity-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: publicity-visual-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./certbot/conf:/etc/letsencrypt:ro
+      - ./certbot/www:/var/www/certbot:ro
+    depends_on:
+      - web
+    networks:
+      - publicity-network
+
+  certbot:
+    image: certbot/certbot:latest
+    container_name: publicity-visual-certbot
+    volumes:
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    command: certonly --webroot -w /var/www/certbot --email your-email@example.com --agree-tos --no-eff-email -d yourdomain.com
+    networks:
+      - publicity-network
+
+networks:
+  publicity-network:
+    driver: bridge
+
+volumes:
+  redis_data:

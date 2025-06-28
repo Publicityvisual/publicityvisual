@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicity Visual - Noticias en Tiempo Real</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .news-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .category-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 10;
+        }
+        .loading-spinner {
+            border-top-color: #3B82F6;
+            -webkit-animation: spinner 1.5s linear infinite;
+            animation: spinner 1.5s linear infinite;
+        }
+        @keyframes spinner {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Barra de navegación -->
+    <nav class="bg-blue-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-newspaper text-2xl"></i>
+                <span class="text-xl font-bold">Publicity Visual</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-blue-200 transition">Inicio</a>
+                <a href="#ultimas-noticias" class="hover:text-blue-200 transition">Últimas Noticias</a>
+                <a href="#categorias" class="hover:text-blue-200 transition">Categorías</a>
+                <a href="#videos" class="hover:text-blue-200 transition">Videos</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="bg-blue-700 hover:bg-blue-600 px-4 py-2 rounded-full transition">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-full transition">
+                    Suscríbete
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner principal -->
+    <div class="relative bg-gray-900 text-white">
+        <div class="absolute inset-0 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
+                 alt="Banner principal" class="w-full h-full object-cover opacity-50">
+        </div>
+        <div class="container mx-auto px-4 py-24 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Noticias en Tiempo Real</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Mantente informado con las últimas noticias de todo el mundo, procesadas y verificadas por nuestro equipo.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <div class="relative flex-grow max-w-2xl">
+                    <input type="text" id="search-input" placeholder="Buscar noticias..." 
+                           class="w-full px-6 py-4 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <button class="absolute right-2 top-2 bg-blue-600 text-white p-2 rounded-full hover:bg-blue-700 transition">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de últimas noticias -->
+    <section id="ultimas-noticias" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">Últimas Noticias</h2>
+                <div class="flex space-x-2">
+                    <button class="px-4 py-2 rounded-lg border hover:bg-gray-100 transition">Ver más</button>
+                </div>
+            </div>
+            
+            <div id="news-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Las noticias se cargarán aquí dinámicamente -->
+                <div class="col-span-3 text-center py-12" id="loading-news">
+                    <div class="inline-block w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full loading-spinner"></div>
+                    <p class="mt-4 text-gray-600">Cargando las últimas noticias...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de categorías -->
+    <section id="categorias" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Explora por Categorías</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <a href="#" class="category-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+                    <div class="text-blue-600 text-3xl mb-3"><i class="fas fa-laptop-code"></i></div>
+                    <h3 class="font-semibold">Tecnología</h3>
+                </a>
+                <a href="#" class="category-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+                    <div class="text-red-600 text-3xl mb-3"><i class="fas fa-landmark"></i></div>
+                    <h3 class="font-semibold">Política</h3>
+                </a>
+                <a href="#" class="category-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+                    <div class="text-green-600 text-3xl mb-3"><i class="fas fa-futbol"></i></div>
+                    <h3 class="font-semibold">Deportes</h3>
+                </a>
+                <a href="#" class="category-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+                    <div class="text-yellow-600 text-3xl mb-3"><i class="fas fa-film"></i></div>
+                    <h3 class="font-semibold">Entretenimiento</h3>
+                </a>
+                <a href="#" class="category-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+                    <div class="text-purple-600 text-3xl mb-3"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="font-semibold">Economía</h3>
+                </a>
+                <a href="#" class="category-card bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition text-center">
+                    <div class="text-pink-600 text-3xl mb-3"><i class="fas fa-heartbeat"></i></div>
+                    <h3 class="font-semibold">Salud</h3>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de videos -->
+    <section id="videos" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">Videos Destacados</h2>
+                <div class="flex space-x-2">
+                    <button class="px-4 py-2 rounded-lg border hover:bg-gray-100 transition">Ver más</button>
+                </div>
+            </div>
+            <div id="videos-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Los videos se cargarán aquí dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Publicity Visual</h3>
+                    <p class="text-gray-400">Tu fuente confiable de noticias en tiempo real con tecnología de vanguardia.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Secciones</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+                        <li><a href="#ultimas-noticias" class="text-gray-400 hover:text-white transition">Últimas Noticias</a></li>
+                        <li><a href="#categorias" class="text-gray-400 hover:text-white transition">Categorías</a></li>
+                        <li><a href="#videos" class="text-gray-400 hover:text-white transition">Videos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Términos de servicio</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Política de privacidad</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cookies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Síguenos</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition text-xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>© 2023 Publicity Visual. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Cargar noticias al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            loadNews();
+            setupEventListeners();
+        });
+
+        // Configurar event listeners
+        function setupEventListeners() {
+            // Búsqueda
+            const searchInput = document.getElementById('search-input');
+            const searchButton = searchInput.nextElementSibling;
+            
+            searchButton.addEventListener('click', () => performSearch(searchInput.value));
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    performSearch(searchInput.value);
+                }
+            });
+
+            // Navegación suave
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Cargar noticias
+        async function loadNews(query = '') {
+            const newsContainer = document.getElementById('news-container');
+            const loadingElement = document.getElementById('loading-news');
+            
+            try {
+                // Mostrar indicador de carga
+                if (loadingElement) loadingElement.style.display = 'block';
+                
+                // Construir URL de la API
+                let apiUrl = '/api/news?limit=9';
+                if (query) {
+                    apiUrl += `&query=${encodeURIComponent(query)}`;
+                }
+                
+                // Realizar petición a la API
+                const response = await fetch(apiUrl);
+                if (!response.ok) throw new Error('Error al cargar las noticias');
+                
+                const data = await response.json();
+                
+                // Limpiar contenedor
+                if (newsContainer) {
+                    newsContainer.innerHTML = '';
+                    
+                    // Mostrar noticias
+                    if (data.articles && data.articles.length > 0) {
+                        data.articles.forEach(article => {
+                            const articleElement = createNewsCard(article);
+                            newsContainer.appendChild(articleElement);
+                        });
+                    } else {
+                        newsContainer.innerHTML = `
+                            <div class="col-span-3 text-center py-12">
+                                <i class="fas fa-newspaper text-5xl text-gray-400 mb-4"></i>
+                                <p class="text-gray-600">No se encontraron noticias. Intenta con otros términos de búsqueda.</p>
+                            </div>
+                        `;
+                    }
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                if (newsContainer) {
+                    newsContainer.innerHTML = `
+                        <div class="col-span-3 text-center py-12">
+                            <i class="fas fa-exclamation-triangle text-5xl text-red-500 mb-4"></i>
+                            <p class="text-red-500">Error al cargar las noticias. Por favor, inténtalo de nuevo más tarde.</p>
+                            <button onclick="loadNews()" class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
+                                Reintentar
+                            </button>
+                        </div>
+                    `;
+                }
+            } finally {
+                // Ocultar indicador de carga
+                if (loadingElement) loadingElement.style.display = 'none';
+            }
+        }
+
+        // Realizar búsqueda
+        function performSearch(query) {
+            if (!query || query.trim() === '') return;
+            
+            // Desplazarse a la sección de noticias
+            const newsSection = document.getElementById('ultimas-noticias');
+            if (newsSection) {
+                window.scrollTo({
+                    top: newsSection.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+            
+            // Cargar noticias con el término de búsqueda
+            loadNews(query);
+        }
+
+        // Crear tarjeta de noticia
+        function createNewsCard(article) {
+            const articleDate = new Date(article.published_at);
+            const formattedDate = articleDate.toLocaleDateString('es-ES', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            
+            const card = document.createElement('div');
+            card.className = 'news-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition';
+            
+            // Construir el HTML de la tarjeta
+            card.innerHTML = `
+                <div class="relative">
+                    ${article.processed_image_url ? 
+                        `<img src="${article.processed_image_url}" alt="${article.title}" class="w-full h-48 object-cover">` :
+                        `<div class="w-full h-48 bg-gray-200 flex items-center justify-center">
+                            <i class="fas fa-image text-4xl text-gray-400"></i>
+                        </div>`
+                    }
+                    <span class="category-badge bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+                        ${article.category || 'General'}
+                    </span>
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center text-sm text-gray-500 mb-2">
+                        <span>${formattedDate}</span>
+                        <span class="mx-2">•</span>
+                        <span>${article.source}</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 line-clamp-2" title="${article.title}">
+                        ${article.title}
+                    </h3>
+                    <p class="text-gray-600 mb-4 line-clamp-3">
+                        ${article.description || 'Sin descripción disponible.'}
+                    </p>
+                    <a href="${article.url}" target="_blank" rel="noopener noreferrer" 
+                       class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                        Leer más
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            `;
+            
+            return card;
+        }
+        
+        // Cargar videos destacados
+        async function loadVideos() {
+            const videosContainer = document.getElementById('videos-container');
+            if (!videosContainer) return;
+            
+            try {
+                // Simular carga de videos (en un caso real, esto vendría de tu API)
+                const mockVideos = [
+                    {
+                        id: '1',
+                        title: 'Última hora: Avances tecnológicos 2023',
+                        thumbnail: 'https://via.placeholder.com/400x225?text=Video+1',
+                        duration: '12:34',
+                        views: '1.2M',
+                        date: 'Hace 2 días'
+                    },
+                    {
+                        id: '2',
+                        title: 'Entrevista exclusiva con el CEO de TechCorp',
+                        thumbnail: 'https://via.placeholder.com/400x225?text=Video+2',
+                        duration: '8:45',
+                        views: '856K',
+                        date: 'Hace 5 días'
+                    },
+                    {
+                        id: '3',
+                        title: 'Análisis del mercado tecnológico',
+                        thumbnail: 'https://via.placeholder.com/400x225?text=Video+3',
+                        duration: '15:22',
+                        views: '2.1M',
+                        date: 'Hace 1 semana'
+                    }
+                ];
+                
+                // Limpiar contenedor
+                videosContainer.innerHTML = '';
+                
+                // Añadir videos al DOM
+                mockVideos.forEach(video => {
+                    const videoElement = createVideoCard(video);
+                    videosContainer.appendChild(videoElement);
+                });
+                
+            } catch (error) {
+                console.error('Error al cargar videos:', error);
+                videosContainer.innerHTML = `
+                    <div class="col-span-3 text-center py-8">
+                        <i class="fas fa-video-slash text-4xl text-gray-400 mb-3"></i>
+                        <p class="text-gray-600">No se pudieron cargar los videos. Intenta actualizar la página.</p>
+                    </div>
+                `;
+            }
+        }
+        
+        // Crear tarjeta de video
+        function createVideoCard(video) {
+            const card = document.createElement('div');
+            card.className = 'bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition';
+            
+            card.innerHTML = `
+                <div class="relative">
+                    <img src="${video.thumbnail}" alt="${video.title}" class="w-full h-48 object-cover">
+                    <div class="absolute bottom-2 right-2 bg-black bg-opacity-75 text-white text-xs px-2 py-1 rounded">
+                        ${video.duration}
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 bg-black bg-opacity-50 transition">
+                        <div class="w-16 h-16 bg-white bg-opacity-80 rounded-full flex items-center justify-center">
+                            <i class="fas fa-play text-2xl text-blue-600"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4">
+                    <h3 class="font-semibold mb-2 line-clamp-2" title="${video.title}">
+                        ${video.title}
+                    </h3>
+                    <div class="flex justify-between text-sm text-gray-500">
+                        <span>${video.views} vistas</span>
+                        <span>${video.date}</span>
+                    </div>
+                </div>
+            `;
+            
+            return card;
+        }
+        
+        // Cargar videos cuando la sección esté visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    loadVideos();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        const videosSection = document.getElementById('videos');
+        if (videosSection) {
+            observer.observe(videosSection);
+        }
+    </script>
+</body>
+</html>

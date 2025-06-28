@@ -1,0 +1,201 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Banner principal -->
+<section class="relative bg-blue-700 text-white py-16 md:py-24 mb-12 rounded-lg overflow-hidden">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-3xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Bienvenido a {{ config.APP_NAME }}</h1>
+            <p class="text-xl md:text-2xl mb-8">Tu fuente confiable de noticias en tiempo real</p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#ultimas-noticias" class="bg-white text-blue-700 font-semibold px-6 py-3 rounded-md hover:bg-gray-100 text-center">
+                    Ver Últimas Noticias
+                </a>
+                <a href="{{ url_for('advertising') }}" class="border-2 border-white text-white font-semibold px-6 py-3 rounded-md hover:bg-white hover:bg-opacity-10 text-center">
+                    Anúnciate con Nosotros
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de noticias destacadas -->
+<section class="mb-16">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6 pb-2 border-b border-gray-200">Noticias Destacadas</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for article in featured_articles %}
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <a href="{{ article.url }}" class="block">
+                <div class="h-48 bg-gray-200 overflow-hidden">
+                    <img src="{{ article.image_url }}" alt="{{ article.title }}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4">
+                    <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded-full mb-2">{{ article.category }}</span>
+                    <h3 class="text-xl font-bold mb-2 line-clamp-2">{{ article.title }}</h3>
+                    <p class="text-gray-600 text-sm mb-3 line-clamp-3">{{ article.summary }}</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <span class="mr-3"><i class="far fa-clock mr-1"></i> {{ article.published_at }}</span>
+                        <span><i class="far fa-user mr-1"></i> {{ article.author }}</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Sección de últimas noticias -->
+<section id="ultimas-noticias" class="mb-16">
+    <div class="flex justify-between items-center mb-6 pb-2 border-b border-gray-200">
+        <h2 class="text-2xl md:text-3xl font-bold">Últimas Noticias</h2>
+        <a href="#" class="text-blue-600 hover:underline font-medium">Ver todas las noticias <i class="fas fa-arrow-right ml-1"></i></a>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for article in latest_news %}
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <a href="{{ article.url }}" class="block">
+                <div class="h-40 bg-gray-200 overflow-hidden">
+                    <img src="{{ article.image_url }}" alt="{{ article.title }}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4">
+                    <span class="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded-full mb-2">{{ article.category }}</span>
+                    <h3 class="text-lg font-bold mb-2 line-clamp-2">{{ article.title }}</h3>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <span class="mr-3"><i class="far fa-clock mr-1"></i> {{ article.published_at }}</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Sección de categorías -->
+<section class="mb-16">
+    <h2 class="text-2xl md:text-3xl font-bold mb-6 pb-2 border-b border-gray-200">Explora por Categorías</h2>
+    
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+        <a href="{{ url_for('category_news', category='mexico') }}" class="category-card bg-blue-600 text-white p-6 rounded-lg text-center hover:bg-blue-700 transition-colors">
+            <i class="fas fa-flag text-3xl mb-2"></i>
+            <h3 class="font-semibold">México</h3>
+        </a>
+        <a href="{{ url_for('category_news', category='mundo') }}" class="category-card bg-green-600 text-white p-6 rounded-lg text-center hover:bg-green-700 transition-colors">
+            <i class="fas fa-globe-americas text-3xl mb-2"></i>
+            <h3 class="font-semibold">Mundo</h3>
+        </a>
+        <a href="{{ url_for('category_news', category='tecnologia') }}" class="category-card bg-purple-600 text-white p-6 rounded-lg text-center hover:bg-purple-700 transition-colors">
+            <i class="fas fa-laptop-code text-3xl mb-2"></i>
+            <h3 class="font-semibold">Tecnología</h3>
+        </a>
+        <a href="{{ url_for('category_news', category='entretenimiento') }}" class="category-card bg-pink-600 text-white p-6 rounded-lg text-center hover:bg-pink-700 transition-colors">
+            <i class="fas fa-film text-3xl mb-2"></i>
+            <h3 class="font-semibold">Entretenimiento</h3>
+        </a>
+        <a href="{{ url_for('category_news', category='deportes') }}" class="category-card bg-red-600 text-white p-6 rounded-lg text-center hover:bg-red-700 transition-colors">
+            <i class="fas fa-futbol text-3xl mb-2"></i>
+            <h3 class="font-semibold">Deportes</h3>
+        </a>
+        <a href="{{ url_for('category_news', category='cultura') }}" class="category-card bg-yellow-600 text-white p-6 rounded-lg text-center hover:bg-yellow-700 transition-colors">
+            <i class="fas fa-palette text-3xl mb-2"></i>
+            <h3 class="font-semibold">Cultura</h3>
+        </a>
+    </div>
+</section>
+
+<!-- Sección de boletín informativo -->
+<section class="bg-blue-50 rounded-lg p-8 mb-16">
+    <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4">Suscríbete a nuestro boletín</h2>
+        <p class="text-gray-600 mb-6">Recibe las últimas noticias directamente en tu correo electrónico.</p>
+        
+        <form class="flex flex-col sm:flex-row gap-2 max-w-md mx-auto">
+            <input type="email" placeholder="Tu correo electrónico" class="flex-1 px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            <button type="submit" class="bg-blue-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-blue-700 transition-colors">
+                Suscribirse
+            </button>
+        </form>
+        <p class="text-xs text-gray-500 mt-3">Al suscribirte, aceptas nuestra <a href="#" class="text-blue-600 hover:underline">Política de Privacidad</a>.</p>
+    </div>
+</section>
+
+<!-- Sección de videos destacados -->
+<section class="mb-16">
+    <div class="flex justify-between items-center mb-6 pb-2 border-b border-gray-200">
+        <h2 class="text-2xl md:text-3xl font-bold">Videos Destacados</h2>
+        <a href="#" class="text-blue-600 hover:underline font-medium">Ver todos los videos <i class="fas fa-arrow-right ml-1"></i></a>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {% for i in range(3) %}
+        <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div class="relative pb-[56.25%] bg-gray-200 overflow-hidden">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <button class="bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full w-16 h-16 flex items-center justify-center text-blue-600 hover:text-blue-700 transition-all">
+                        <i class="fas fa-play text-2xl"></i>
+                    </button>
+                </div>
+                <img src="https://via.placeholder.com/800x450" alt="Video destacado" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                    <span class="bg-red-600 text-white text-xs font-semibold px-2 py-1 rounded">EN VIVO</span>
+                </div>
+            </div>
+            <div class="p-4">
+                <h3 class="font-bold mb-2 line-clamp-2">Título del video destacado que puede ser un poco más largo</h3>
+                <div class="flex items-center text-sm text-gray-500">
+                    <span class="mr-3"><i class="far fa-eye mr-1"></i> 1.2K</span>
+                    <span><i class="far fa-clock mr-1"></i> Hace 2 horas</span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Sección de publicidad -->
+{% if config.ENABLE_ADS %}
+<section class="mb-16">
+    <div class="bg-gray-100 p-4 rounded-lg text-center">
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-lg font-semibold mb-2">Publicidad</h3>
+            <div class="bg-white p-4 rounded border border-gray-200">
+                <!-- Espacio publicitario -->
+                <div id="ad-slot" class="h-50 flex items-center justify-center bg-gray-100">
+                    <p class="text-gray-500">Espacio publicitario</p>
+                </div>
+                <p class="text-xs text-gray-500 mt-2">Anúnciate con nosotros y llega a miles de lectores</p>
+                <a href="{{ url_for('advertising') }}" class="inline-block mt-2 text-blue-600 hover:underline text-sm font-medium">Más información</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Scripts específicos para la página de inicio
+    document.addEventListener('DOMContentLoaded', function() {
+        // Inicializar reproductores de video
+        const videoPlayers = document.querySelectorAll('.video-player');
+        
+        videoPlayers.forEach(player => {
+            player.addEventListener('click', function() {
+                this.play();
+                this.controls = true;
+                this.querySelector('.play-button').style.display = 'none';
+            });
+        });
+        
+        // Lazy loading para imágenes
+        if ('loading' in HTMLImageElement.prototype) {
+            const images = document.querySelectorAll('img.lazy');
+            images.forEach(img => {
+                img.src = img.dataset.src;
+            });
+        }
+    });
+</script>
+{% endblock %}
