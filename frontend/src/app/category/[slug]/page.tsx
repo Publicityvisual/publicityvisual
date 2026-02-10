@@ -10,7 +10,20 @@ interface CategoryPageProps {
 
 
 
-export const dynamic = 'force-dynamic';
+import { MOCK_ARTICLES } from "@/lib/api";
+
+export async function generateStaticParams() {
+  const categories = Array.from(new Set(MOCK_ARTICLES.map((article) => article.category.toLowerCase().replace(/\s+/g, '-'))));
+  // Add standard categories that might not be in mock data but are in nav
+  const standardCategories = ["mundo", "politica", "economia", "tecnologia", "cultura", "deportes"];
+  const allCategories = Array.from(new Set([...categories, ...standardCategories]));
+  
+  return allCategories.map((slug) => ({
+    slug: slug,
+  }));
+}
+
+// export const dynamic = 'force-dynamic';
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const category = params.slug;

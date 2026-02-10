@@ -7,7 +7,7 @@ import { BreakingNewsTicker } from "@/components/features/BreakingNewsTicker";
 import { CategorySection } from "@/components/features/CategorySection";
 import { fetchNews } from "@/lib/api";
 
-export const dynamic = 'force-dynamic';
+// export const dynamic = 'force-dynamic';
 
 export default async function Home() {
   // Fetch data in parallel for performance

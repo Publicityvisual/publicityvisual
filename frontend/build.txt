@@ -5,25 +5,1139 @@
   ▲ Next.js 14.2.3
 
    Creating an optimized production build ...
-Failed to compile.
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/24) ...
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
 
-./src/components/ui/button.tsx
-Module not found: Can't resolve '@radix-ui/react-slot'
+Error occurred prerendering page "/article/4". Read more: https://nextjs.org/docs/messages/prerender-error
 
-https://nextjs.org/docs/messages/module-not-found
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17)
 
-Import trace for requested module:
-./src/components/ui/ThemeToggle.tsx
-./src/components/layout/Navbar.tsx
+Error occurred prerendering page "/article/3". Read more: https://nextjs.org/docs/messages/prerender-error
 
-./src/components/ui/button.tsx
-Module not found: Can't resolve 'class-variance-authority'
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17)
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
 
-https://nextjs.org/docs/messages/module-not-found
+Error occurred prerendering page "/article/6". Read more: https://nextjs.org/docs/messages/prerender-error
 
-Import trace for requested module:
-./src/components/ui/ThemeToggle.tsx
-./src/components/layout/Navbar.tsx
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17)
 
+Error occurred prerendering page "/article/2". Read more: https://nextjs.org/docs/messages/prerender-error
 
-> Build failed because of webpack errors
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17)
+
+Error occurred prerendering page "/article/5". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17)
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+
+Error occurred prerendering page "/article/8". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17)
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+   Generating static pages (6/24) 
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async Promise.all (index 1)
+    at async N (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\page.js:31:3065) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async Promise.all (index 0)
+    at async N (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\page.js:31:3065) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async Promise.all (index 2)
+    at async N (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\page.js:31:3065) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+
+Error occurred prerendering page "/article/7". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17)
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async Promise.all (index 1)
+    at async N (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\page.js:31:3065) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async Promise.all (index 0)
+    at async N (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\page.js:31:3065) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async Promise.all (index 2)
+    at async N (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\page.js:31:3065) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+   Generating static pages (12/24) 
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async d (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\category\[slug]\page.js:46:4489) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async r (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\chunks\375.js:1:13115)
+    at async _ (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:16:915) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+API unavailable, returning mock data: TypeError: fetch failed
+    at node:internal/deps/undici/undici:15845:13
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5) {
+  [cause]: AggregateError [ECONNREFUSED]: 
+      at internalConnectMultiple (node:net:1134:18)
+      at afterConnectMultiple (node:net:1715:7) {
+    code: 'ECONNREFUSED',
+    [errors]: [ [Error], [Error] ]
+  }
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17) {
+  digest: '2794630356'
+}
+
+Error occurred prerendering page "/article/1". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: y is not a function
+    at f (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\.next\server\app\article\[id]\page.js:1:5752)
+    at eh (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:134786)
+    at e (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:137671)
+    at ek (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:138145)
+    at Array.toJSON (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135755)
+    at stringify (<anonymous>)
+    at eR (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142219)
+    at eE (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:142698)
+    at Timeout._onTimeout (C:\Users\djkov\.gemini\antigravity\scratch\publicityvisual\frontend\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:12:135475)
+    at listOnTimeout (node:internal/timers:605:17)
+   Generating static pages (18/24) 
+ ✓ Generating static pages (24/24)
+
+> Export encountered errors on following paths:
+	/article/[id]/page: /article/1
+	/article/[id]/page: /article/2
+	/article/[id]/page: /article/3
+	/article/[id]/page: /article/4
+	/article/[id]/page: /article/5
+	/article/[id]/page: /article/6
+	/article/[id]/page: /article/7
+	/article/[id]/page: /article/8
