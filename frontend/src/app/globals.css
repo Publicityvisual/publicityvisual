@@ -1,35 +1,8 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-  /* Brand Colors - Sophisticated & Trustworthy */
-  --color-brand-primary: #0056b3; /* Deep Royal Blue */
-  --color-brand-secondary: #1a1a1a; /* Almost Black */
-  --color-brand-accent: #e11d48; /* Journalism Red for breaking news */
 
-  /* Neutral Palette - High Contrast & Clean */
-  --color-surface-100: #ffffff;
-  --color-surface-200: #f8f9fa; /* Light Gray for sections */
-  --color-surface-300: #e9ecef; /* Borders */
-
-  --color-text-primary: #111827; /* Dark Gray for headings */
-  --color-text-secondary: #4b5563; /* Medium Gray for body */
-  --color-text-tertiary: #9ca3af; /* Light Gray for meta info */
-
-  /* Social Colors */
-  --color-social-facebook: #1877f2;
-  --color-social-twitter: #1da1f2;
-  --color-social-instagram: #e4405f;
-  --color-social-whatsapp: #25d366;
-
-  /* Typography */
-  --font-display: var(--font-poppins), system-ui, sans-serif;
-  --font-body: var(--font-open-sans), system-ui, sans-serif;
-  --font-mono: monospace;
-
-  /* Animations */
-  --animate-fade-in: fade-in 0.5s ease-out;
-  --animate-slide-up: slide-up 0.5s ease-out;
-}
 
 @layer base {
   :root {
