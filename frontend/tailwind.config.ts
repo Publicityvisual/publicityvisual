@@ -13,20 +13,43 @@ const config: Config = {
         body: ["var(--font-body)", "sans-serif"],
       },
       colors: {
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
         brand: {
           primary: "#0056b3",
           secondary: "#1a1a1a",
           accent: "#e11d48",
-        },
-        surface: {
-          100: "#ffffff",
-          200: "#f8f9fa",
-          300: "#e9ecef",
-        },
-        text: {
-          primary: "#111827",
-          secondary: "#4b5563",
-          tertiary: "#9ca3af",
         },
         "jannah-blue": "#0056b3",
         "jannah-red": "#e11d48",

@@ -17,13 +17,11 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Publicity Visual - Super App",
-  description: "La plataforma de noticias más avanzada.",
+  title: "Publicity Visual | Digital Media Hub",
+  description: "The premium digital media and entertainment hub in partnership with T ENTERTAINMENT.",
 };
 
 import { ThemeProvider } from "@/components/ui/ThemeProvider";
-
-// ... existing code ...
 
 export default function RootLayout({
   children,
@@ -32,10 +30,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
+      <head>
+        <meta httpEquiv="Pragma" content="no-cache" />
+        <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta httpEquiv="Expires" content="0" />
+      </head>
       <body className={`${poppins.variable} ${openSans.variable} antialiased`}>
         <ThemeProvider
             defaultTheme="dark"
-            storageKey="vite-ui-theme"
+            storageKey="pv-theme"
           >
             {children}
         </ThemeProvider>
