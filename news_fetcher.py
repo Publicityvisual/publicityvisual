@@ -163,34 +163,50 @@ class NewsFetcher:
             logger.error(f"Error al extraer el artículo {url}: {str(e)}")
             return None
     
-    def get_news(self, query: str = None, language: str = 'es', limit: int = 20) -> List[Dict]:
+    def get_news(self, query: str = None, language: str = 'es', limit: int = 20, page: int = 1) -> List[Dict]:
         """
-        Obtiene noticias de múltiples fuentes
-        
-        Args:
-            query (str): Término de búsqueda
-            language (str): Código de idioma
-            limit (int): Número máximo de resultados
-            
-        Returns:
-            List[Dict]: Lista de artículos de noticias
+        Obtiene noticias de múltiples fuentes con paginación
         """
         all_articles = []
         
+        # Calcular offset para "paginar" resultados si la fuente no lo soporta nativamente
+        offset = (page - 1) * limit
+
         # Obtener noticias de NewsAPI si está configurado
         if self.newsapi:
+            # NewsAPI soporta 'page' nativamente
             newsapi_articles = self.fetch_from_newsapi(query, language, min(limit, 50))
             all_articles.extend(newsapi_articles)
         
-        # Obtener noticias de Google News
-        google_articles = self.fetch_from_google_news(query, language, min(limit, 10))
+        # Obtener noticias de Google News (Scraping no soporta page nativo fácilmente, así que simulamos)
+        # En un caso real, haríamos scraping de la página N
+        google_articles = self.fetch_from_google_news(query, language, min(limit + offset, 50)) # Pedimos más para luego recortar
+        
+        # Combinar y ordenar
         all_articles.extend(google_articles)
         
-        # Ordenar por fecha de publicación (más recientes primero)
+        # Deduplicar por URL
+        seen_urls = set()
+        unique_articles = []
+        for art in all_articles:
+            if art['url'] not in seen_urls:
+                unique_articles.append(art)
+                seen_urls.add(art['url'])
+
+        all_articles = unique_articles
+        
+        # Ordenar por fecha
         all_articles.sort(key=lambda x: x.get('published_at', ''), reverse=True)
         
-        # Limitar el número de resultados
-        return all_articles[:limit]
+        # Aplicar paginación manual sobre la lista combinada
+        start = offset
+        end = offset + limit
+        
+        # Si el start es mayor que la longitud, no hay más resultados
+        if start >= len(all_articles):
+            return []
+            
+        return all_articles[start:end]
 
 # Ejemplo de uso
 if __name__ == "__main__":

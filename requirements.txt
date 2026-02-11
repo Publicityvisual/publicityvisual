@@ -1,46 +1,47 @@
 # Backend principal
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-python-multipart==0.0.6
-python-jose[cryptography]==3.3.0
-passlib[bcrypt]==1.7.4
-python-dotenv==1.0.0
-pydantic==2.5.1
+fastapi
+uvicorn[standard]
+python-multipart
+python-jose[cryptography]
+passlib[bcrypt]
+python-dotenv
+pydantic
+
+# AI y LLM
+# llama-cpp-python
+langchain
+langchain-community
 
 # Procesamiento de imágenes y videos
-Pillow==10.0.0
-opencv-python-headless==4.8.0.76
-moviepy==1.0.3
-imageio-ffmpeg==0.4.8
+Pillow
+opencv-python-headless
+moviepy<2.0
+imageio-ffmpeg
 
 # Obtención de noticias
-newspaper3k==0.2.8
-google-news==1.6.9
-newsapi-python==0.2.7
-requests==2.31.0
-beautifulsoup4==4.12.2
-lxml==4.9.3
+newspaper3k
+# google-news
+newsapi-python
+requests
+beautifulsoup4
+lxml[html_clean]
 
 # Procesamiento de texto
-sumy==0.10.0
+sumy
 
 # Caché y rendimiento
-redis==4.5.5
-python-memcached==1.59
+redis
+python-memcached
 
 # Utilidades
-tqdm==4.66.1  # Para barras de progreso
-python-slugify==8.0.1
-
-# Seguridad
-python-jose[cryptography]==3.3.0
-python-multipart==0.0.6
+tqdm
+python-slugify
 
 # Pruebas
-pytest==7.4.2
-pytest-asyncio==0.21.1
-httpx==0.24.1
+pytest
+pytest-asyncio
+httpx
 
 # Documentación
-mkdocs==1.5.2
-mkdocs-material==9.2.5b1
+mkdocs
+mkdocs-material
