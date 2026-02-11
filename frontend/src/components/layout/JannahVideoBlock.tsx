@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Play } from "lucide-react";
+import { Play, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import { StickyVideoPlayer } from "./StickyVideoPlayer";
 
 interface VideoPost {
   title: string;
@@ -19,7 +20,8 @@ interface JannahVideoBlockProps {
 
 export function JannahVideoBlock({ title, posts, accentColor = "#f14d5d" }: JannahVideoBlockProps) {
   return (
-    <div className="mb-16 bg-[#1b1c1e] p-8 rounded-[4px] border border-white/5">
+    <div className="mb-16 bg-[#1b1c1e] p-8 rounded-lg border border-white/5 shadow-2xl overflow-hidden">
+      {/* Header */}
       <div className="flex items-center justify-between mb-8 pb-3 relative">
         <div className="flex items-center gap-4 text-white">
           <span className="w-[3px] h-6" style={{ backgroundColor: accentColor }}></span>
@@ -33,40 +35,53 @@ export function JannahVideoBlock({ title, posts, accentColor = "#f14d5d" }: Jann
         </button>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {posts.map((post, i) => (
-          <motion.div 
-            key={i}
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.1 }}
-            className="group cursor-pointer"
-          >
-            <div className="relative aspect-video rounded-sm overflow-hidden mb-3 border border-white/5 bg-black">
-              <Image 
-                src={post.image} 
-                alt={post.title} 
-                fill 
-                className="object-cover opacity-60 transition-all duration-500 group-hover:scale-110 group-hover:opacity-100"
-              />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-10 h-10 rounded-full bg-[#f14d5d] flex items-center justify-center text-white shadow-xl opacity-0 scale-50 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300">
-                  <Play size={20} fill="currentColor" />
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Main Sticky Video Area */}
+        <div className="lg:col-span-2">
+          <StickyVideoPlayer />
+          <div className="mt-6">
+            <span className="px-3 py-1 bg-[#f14d5d] text-white text-[10px] font-black uppercase tracking-widest mb-4 inline-block rounded-sm">Featured Video</span>
+            <h3 className="text-2xl md:text-3xl font-black text-white uppercase tracking-tighter leading-tight group-hover:text-[#f14d5d] transition-colors">
+              PV Fusion: La Nueva Era de la Producción Multimedia Global
+            </h3>
+          </div>
+        </div>
+
+        {/* Sidebar Playlist */}
+        <div className="space-y-4">
+          <p className="text-[10px] font-black text-[#f14d5d] uppercase tracking-[0.2em] mb-4">Próximos Videos</p>
+          {posts.map((post, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="flex gap-4 group cursor-pointer items-center p-2 rounded-lg hover:bg-white/5 transition-colors"
+            >
+              <div className="relative w-24 h-16 shrink-0 rounded-md overflow-hidden bg-black">
+                <Image 
+                  src={post.image} 
+                  alt={post.title} 
+                  fill 
+                  className="object-cover opacity-60 group-hover:opacity-100 transition-opacity"
+                />
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                  <Play size={16} className="text-white" fill="currentColor" />
                 </div>
               </div>
-              <div className="absolute bottom-2 right-2 bg-black/80 px-1.5 py-0.5 rounded-sm text-[8px] font-black text-white">
-                {post.duration}
+              <div className="flex flex-col min-w-0">
+                <h4 className="text-[12px] font-black text-white/90 leading-tight uppercase truncate group-hover:text-[#f14d5d] transition-colors">
+                  {post.title}
+                </h4>
+                <div className="flex items-center gap-2 mt-1">
+                  <span className="text-[9px] font-bold text-white/30 uppercase tracking-widest">{post.category}</span>
+                  <span className="text-[9px] font-bold text-white/30 uppercase tracking-widest">• {post.duration}</span>
+                </div>
               </div>
-            </div>
-            <h4 className="text-[12px] font-black leading-tight text-white/90 uppercase group-hover:text-[#f14d5d] transition-colors line-clamp-2">
-              {post.title}
-            </h4>
-            <span className="text-[9px] font-bold text-white/30 mt-2 block uppercase tracking-widest">
-              {post.category}
-            </span>
-          </motion.div>
-        ))}
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   );

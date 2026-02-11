@@ -15,6 +15,7 @@ import { JannahBreakingNews } from "@/components/layout/JannahBreakingNews";
 import { JannahDenseGrid } from "@/components/layout/JannahDenseGrid";
 import { AIInsightsWidget } from "@/components/layout/AIInsightsWidget";
 import { JannahAuthors } from "@/components/layout/JannahAuthors";
+import { StickySidebar } from "@/components/layout/StickySidebar";
 
 export default function Home() {
   const techPosts = [
@@ -94,7 +95,8 @@ export default function Home() {
               />
             </div>
 
-            <aside className="space-y-12">
+            <div className="lg:col-span-1">
+            <StickySidebar className="space-y-12">
               <JannahSmartAI />
               <AIInsightsWidget />
               <JannahAuthors />
@@ -102,10 +104,11 @@ export default function Home() {
               <JannahNewsletter />
               <JannahTabbedWidget />
               <JannahSocialCounter />
-              <div className="bg-gray-200 dark:bg-white/5 aspect-square flex items-center justify-center border border-gray-300 dark:border-white/10 rounded-sm">
+            </StickySidebar>
+            <div className="bg-gray-200 dark:bg-white/5 aspect-square flex items-center justify-center border border-gray-300 dark:border-white/10 rounded-sm mt-12">
                 <span className="text-[10px] font-black text-gray-400 dark:text-white/20 uppercase tracking-[0.3em]">Ad 300x300</span>
               </div>
-            </aside>
+          </div>
           </div>
         </div>
       </main>

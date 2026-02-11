@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { SearchOverlay } from "./SearchOverlay";
 import { MegaMenu } from "./MegaMenu";
+import { ReadingProgress } from "./ReadingProgress";
 
 const MOCK_POSTS = [
   { title: "El futuro de la producción digital 2026", image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=800", date: "Hace 1 hora" },
@@ -51,6 +52,7 @@ export function Navbar() {
         ? "fixed top-0 bg-white/80 dark:bg-[#0a0c0e]/80 shadow-[0_4px_30px_rgba(0,0,0,0.03)] border-white/20 dark:border-white/5" 
         : "relative bg-white dark:bg-[#101214] border-gray-100 dark:border-white/5"
     )}>
+      <ReadingProgress />
       <div className="jannah-container flex items-center justify-between h-[50px]">
         {/* Desktop Links */}
         <div className="hidden lg:flex items-center h-full">

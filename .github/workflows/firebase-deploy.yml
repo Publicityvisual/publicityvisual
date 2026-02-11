@@ -34,4 +34,4 @@ jobs:
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_GEN_LANG_CLIENT_0045400907 }}"
           channelId: live
           projectId: gen-lang-client-0045400907
-          entrypoint: frontend
+          entryPoint: frontend
