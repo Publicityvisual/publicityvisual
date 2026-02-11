@@ -21,27 +21,21 @@ export const metadata: Metadata = {
   description: "The premium digital media and entertainment hub in partnership with T ENTERTAINMENT.",
 };
 
-import { ThemeProvider } from "@/components/ui/ThemeProvider";
+import { Providers } from "./providers";
+import { SelectAndShare } from "@/components/ui/SelectAndShare";
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <head>
-        <meta httpEquiv="Pragma" content="no-cache" />
-        <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-        <meta httpEquiv="Expires" content="0" />
-      </head>
-      <body className={`${poppins.variable} ${openSans.variable} antialiased`}>
-        <ThemeProvider
-            defaultTheme="dark"
-            storageKey="pv-theme"
-          >
-            {children}
-        </ThemeProvider>
+      <body className="font-sans antialiased text-gray-900 bg-white dark:bg-[#0a0c0e] dark:text-gray-100 selection:bg-[#f14d5d] selection:text-white">
+        <Providers>
+          <SelectAndShare />
+          {children}
+        </Providers>
       </body>
     </html>
   );

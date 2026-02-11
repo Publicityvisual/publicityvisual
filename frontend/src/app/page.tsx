@@ -16,6 +16,8 @@ import { JannahDenseGrid } from "@/components/layout/JannahDenseGrid";
 import { AIInsightsWidget } from "@/components/layout/AIInsightsWidget";
 import { JannahAuthors } from "@/components/layout/JannahAuthors";
 import { StickySidebar } from "@/components/layout/StickySidebar";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { AdSlot } from "@/components/ui/AdSlot";
 
 export default function Home() {
   const techPosts = [
@@ -47,7 +49,7 @@ export default function Home() {
           ]}
         />
         <JannahBigGrid1 />
-        
+        <Breadcrumbs />
         <div className="jannah-container mt-16 pb-20">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2 space-y-12">
@@ -105,9 +107,7 @@ export default function Home() {
               <JannahTabbedWidget />
               <JannahSocialCounter />
             </StickySidebar>
-            <div className="bg-gray-200 dark:bg-white/5 aspect-square flex items-center justify-center border border-gray-300 dark:border-white/10 rounded-sm mt-12">
-                <span className="text-[10px] font-black text-gray-400 dark:text-white/20 uppercase tracking-[0.3em]">Ad 300x300</span>
-              </div>
+            <AdSlot type="sidebar" className="mt-12" />
           </div>
           </div>
         </div>
