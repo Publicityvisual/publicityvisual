@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+  
+  body {
+    @apply bg-white text-gray-900 antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    @apply font-semibold;
+  }
+}
+
+@layer components {
+  .article-card {
+    @apply bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden;
+  }
+  
+  .nav-link {
+    @apply text-gray-600 hover:text-brand-600 font-medium transition-colors duration-200;
+  }
+  
+  .btn-primary {
+    @apply bg-brand-600 text-white px-4 py-2 rounded-lg hover:bg-brand-700 transition-colors duration-200 font-medium;
+  }
+  
+  .section-title {
+    @apply text-2xl md:text-3xl font-bold text-gray-900 mb-6;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
