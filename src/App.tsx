@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { 
   Menu, X, Search, Bell, User, ChevronRight, Clock, Eye, 
-  TrendingUp, Zap, Music, Monitor, Globe, Heart, Share2,
-  MessageCircle, Bookmark, Filter
+  TrendingUp, Zap, Music, Monitor, Globe, Share2,
+  Filter
 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
